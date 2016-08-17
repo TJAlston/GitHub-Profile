@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Avatar from './Avatar'
 import Followers from './Followers'
+import Following from './Following'
+import Repositories from './Repos'
+import Organizations from './Orgs'
 import 'whatwg-fetch'
 
 class App extends Component {
@@ -23,10 +26,24 @@ class App extends Component {
 
   render () {
     return <div className='App'>
+      <div className='Sidebar'>
       <Avatar id={this.state.userData.id} />
        <div className='Name'> TJ ALSTON </div>
-       <div className='Bio'>Front End Engineer Student</div>
+       <div className='Bio'> Front End Engineer Student </div>
+       <div className='Info'>
+       <div className='Location'> Tampa, Florida </div>
+       <div className='Email'> tjalston82@gmail.com </div>
+       <div className='Website'> http://tjalston82.blogspot.com </div>
+       <div className='JoinDate'> Joined on Jul 18, 2016 </div>
+       </div>
+        <p>FOLLOWERS</p>
       <Followers url={this.state.userData.followers_url} />
+        <p>FOLLOWING</p>
+      <Following url={this.state.userData.following_url} />
+        <p>ORGANIZATIONS</p>
+      <Organizations url={this.state.userData.organizations_url} />
+        </div>
+      <Repositories url={this.state.userData.repos_url} />
     </div>
   }
 }
