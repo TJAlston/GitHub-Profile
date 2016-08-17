@@ -8,7 +8,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      user: 'ambethia',
+      user: 'TJAlston',
       userData: {}
     }
   }
@@ -24,6 +24,8 @@ class App extends Component {
   render () {
     return <div className='App'>
       <Avatar id={this.state.userData.id} />
+       <div className='Name'> TJ ALSTON </div>
+       <div className='Bio'>Front End Engineer Student</div>
       <Followers url={this.state.userData.followers_url} />
     </div>
   }

@@ -2,9 +2,33 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  margin-left: 125px;
+  background: url(http://www.walldevil.com/wallpapers/a38/wallpapers-background-high-backgrounds-resolution-blue-gaming-black-multi-color-shining-waves.jpg);
+  background-size: cover;
 }
 
 .Avatar img {
-  max-height: 200px;
-  max-width: 200px;
+  margin-top: 50px;
+  border-radius: 10px;
+  max-height: 275px;
+  max-width: 275px;
+}
+
+.App {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 7px white;
+}
+
+.Name {
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 7px white;
+  margin-left: 15px;
+}
+
+.Bio {
+  font-size: 16px;
+  color: white;
+  text-shadow: 1px 1px 7px white;
 }
